@@ -1,8 +1,8 @@
 import { SlideProps } from "./slide.props";
 
-export const Slide = ({ id, text, imageURL }: SlideProps) => {
+export const Slide = ({ id, text, imageURL, imageIndex }: SlideProps) => {
   return (
-    <div key={id} className="slide">
+    <div key={id} className="slide" style={{ translate: `${-100 * imageIndex}%` }}>
       <h1>{text}</h1>
       <img className="slide-img" src={`http://localhost:3300${imageURL}`} />
     </div>

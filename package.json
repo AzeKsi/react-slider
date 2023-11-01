@@ -1,0 +1,24 @@
+{
+  "name": "react-slider",
+  "version": "1.0.0",
+  "description": "React Slider",
+  "main": "index.js",
+  "scripts": {
+    "install": "concurrently \"cd backend && npm install\" \"cd frontend && npm install\"",
+    "start": "concurrently \"cd backend && npm start\" \"cd frontend && npm run dev\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AzeKsi/react-slider.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AzeKsi/react-slider/issues"
+  },
+  "homepage": "https://github.com/AzeKsi/react-slider#readme",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

@@ -1,0 +1,45 @@
+.slide{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: translate 300ms ease-in-out;
+}
+
+.slide-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slide-btn-left{
+    left: 5px;
+}
+
+.slide-btn-right{
+    right: 5px;
+}
+
+.slide h1{
+    position: absolute;
+    z-index: 10;
+}
+
+.slide-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+    filter: opacity(50%) blur(3px);
+}
+
+.slide-audio{
+    position: absolute;
+    z-index: 10;
+    top: 58vh;
+    left: 50%;
+    transform: translateX(-50%)
+}
