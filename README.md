@@ -11,3 +11,5 @@ To run service locally you have to perform following steps:
 2. Install packages `npm install`
 3. Run `npm start`
 4. Application is available on `http://localhost:3000` in your browser
+5. `npm test` launches tests
+
