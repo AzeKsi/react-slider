@@ -2,6 +2,7 @@ import { Slide } from "./slide/slide";
 import { Button } from "../button/button";
 import { SlidesProps } from "./slides.props";
 import { useSlides } from "./slides.effect";
+import { API_URL } from "../../constants/config.const";
 
 export const Slides = ({ slides }: SlidesProps) => {
   const { imageIndex, audioRef, showNextImage, showPrevImage } = useSlides(slides);
@@ -12,7 +13,7 @@ export const Slides = ({ slides }: SlidesProps) => {
       <div className="slides-container">
         {slides.length && (
           <audio controls className="slide-audio" ref={audioRef}>
-            <source src={`http://localhost:3300${slides[imageIndex].audioURL}`} type="audio/mpeg" />
+            <source src={`${API_URL}${slides[imageIndex].audioURL}`} type="audio/mpeg" />
             {NotSupportingBrowser}
           </audio>
         )}
